@@ -17,13 +17,17 @@
  
 }
 
-.background img{
-  width: 100%;
-  position: absolute;
-  top: 0px;
-  z-index: -1;
- 
+
+.background {
+  background-image: url('../public/mainimage.jpg') ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+
 }
+
+
+
 
 .header-container {
   margin-top: 0px;
@@ -46,7 +50,6 @@
 .header-nav {
 
   display: flex;
-  
   padding-right: 100px;
   font-size: 20px;
  
@@ -70,30 +73,72 @@
 .img-title-container {
   display: flex;
   align-items: center;
+  width: 976px;
   height: 884px;
-  margin-left: 64px;
+  background: linear-gradient(
+    80deg,
+    rgba(28, 32, 43, 1) 0%,
+    rgba(28, 32, 43, 0) 100%
+  )
+
 }
 
 
 .main-title-container  {
-  width: ;
   width: 630px;
-  height: 328px;
-
+  height: 300px;
   letter-spacing: -1px;
-  
-  align-items: center;
-  flex-direction: column;
+  margin-left: 64px;
   color: white;
+}
+
+.main-title-container button img {
+  width: 20px;
 }
 
 .main-title-container h1 {
   font-size: 80px;
   margin: 0px;
+  line-height: 80px;
 
 }
 
 .main-title-container p  {
+  margin-top: 30px;
   font-size: 24px;
 
+}
+
+
+.btn-main-title-container {
+  margin-top: 36px;
+  align-items: center;
+}
+
+.btn-play {
+  height: 58px;
+  width: 224px;
+  font-size: 26px;
+  font-weight: 600;
+  border-radius:8px ;
+  border: none;
+  background-color: rgba(255, 255, 255, 1);
+  margin-right: 24px;
+  
+}
+
+.btn-play img {
+  margin-right: 6px;
+}
+
+
+.btn-detail {
+  width: 150px;
+  height: 58px;
+  border-radius:8px ;
+  font-size: 26px;
+  background-color: transparent;
+  color: white;
+  border-color: white;
+  border-width: 2px;
 }
